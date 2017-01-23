@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "939869791208",
+    "firebase_url": "https://firedroid23.firebaseio.com",
+    "project_id": "firedroid23",
+    "storage_bucket": "firedroid23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939869791208:android:07d327942d59e96c",
+        "android_client_info": {
+          "package_name": "com.hsbp.firechat.firedroid23"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939869791208-u8r09bfiaevhcnjpo8r937ir8dsrvopt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hsbp.firechat.firedroid23",
+            "certificate_hash": "171EE34C2658DB9E16DC03595EB4FEAA3ED978A9"
+          }
+        },
+        {
+          "client_id": "939869791208-ecut3ok66uj1q7h7e6menu6nvvuvodmb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBg5r1NJClaMSQ8V_S7_A1XmhNwXFVxoR4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939869791208-ecut3ok66uj1q7h7e6menu6nvvuvodmb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
