@@ -96,8 +96,8 @@ public class MainActivity extends AppCompatActivity {
         mSendButton = (Button) findViewById(R.id.sendButton);
 
         // Initialize message ListView and its adapter
-        List<FriendlyMessage> friendlyMessages = new ArrayList<>();
-        mMessageAdapter = new MessageAdapter(this, R.layout.item_message, friendlyMessages);
+        List<FCMessage> fcMessages = new ArrayList<>();
+        mMessageAdapter = new MessageAdapter(this, R.layout.item_message, fcMessages);
         mMessageListView.setAdapter(mMessageAdapter);
 
         // Initialize progress bar
@@ -140,9 +140,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // TODO: Send messages on click
-                FriendlyMessage friendlyMessage = new FriendlyMessage
+                FCMessage fcMessage = new FCMessage
                         (mMessageEditText.getText().toString(), mUsername, null);
-                mMessagesDatabaseReference.push().setValue(friendlyMessage);
+                mMessagesDatabaseReference.push().setValue(fcMessage);
 
                 // Clear input box
                 mMessageEditText.setText("");
@@ -207,9 +207,9 @@ public class MainActivity extends AppCompatActivity {
                        (this, new OnSuccessListener<UploadTask.TaskSnapshot>() {
                            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                             Uri downloadUrl = taskSnapshot.getDownloadUrl();
-                            FriendlyMessage friendlyMessage =
-                                    new FriendlyMessage(null, mUsername, downloadUrl.toString());
-                               mMessagesDatabaseReference.push().setValue(friendlyMessage);
+                            FCMessage fcMessage =
+                                    new FCMessage(null, mUsername, downloadUrl.toString());
+                               mMessagesDatabaseReference.push().setValue(fcMessage);
                            }
                        });
 
@@ -270,8 +270,8 @@ public class MainActivity extends AppCompatActivity {
             mChildEventListener = new ChildEventListener() {
                 @Override
                 public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                    FriendlyMessage friendlyMessage = dataSnapshot.getValue(FriendlyMessage.class);
-                    mMessageAdapter.add(friendlyMessage);
+                    FCMessage fcMessage = dataSnapshot.getValue(FCMessage.class);
+                    mMessageAdapter.add(fcMessage);
                 }
 
                 public void onChildChanged(DataSnapshot dataSnapshot, String s) {

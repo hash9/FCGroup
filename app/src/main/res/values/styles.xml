@@ -9,10 +9,10 @@
 
         <item name="android:colorButtonNormal">@drawable/button_selector</item>
         <item name="colorButtonNormal">@drawable/button_selector</item>
-        <item name="android:buttonStyle">@style/FriendlyButtonStyle</item>
+        <item name="android:buttonStyle">@style/FCButtonStyle</item>
     </style>
 
-    <style name="FriendlyButtonStyle" parent="Widget.AppCompat.Button">
+    <style name="FCButtonStyle" parent="Widget.AppCompat.Button">
         <item name="android:textColor">@color/colorTitle</item>
 
     </style>
