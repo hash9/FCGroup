@@ -12,4 +12,4 @@
 <img src="https://github.com/hash9/FCGroup--Android_Chat/blob/master/img/Screenshot_20170128-210834.png" width="250" height="460"/>
 </h1>
 
-made with love using Firebase services!
+- made with love using Firebase services!
